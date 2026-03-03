@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        great working today
+        <button id="stop">Stop</button>
+    </h1>
+    
+</body>
+<script>
+
+    const sayhello =function(){
+        console.log("hello ji");
+    }
+
+    // document.querySelector('h1').innerHTML="best JS series "
+    const changeText =function (){
+        document.querySelector('h1').innerHTML="best js series";
+
+    }
+    const changeMe= setTimeout(changeText,2000)
+
+   document.querySelector('#stop').addEventListener
+   ('click',function(){
+    clearInterval(changeMe);
+   })
+</script>
+</html>

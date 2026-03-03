@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="image">
+        <li id="im1">hello ji 1</li>
+        <li id="im2">hello ji 2</li>
+        <li id="im3">hello ji 3</li>
+    </ul>
+    <h1 id="hello">hello jii</h1>
+
+    <a id="google",href="https://www.google.com/">google par jao</a>
+</body>
+
+<script>
+    // document.getElementById('').onclick=function(){
+    //     alert('something is clicked');
+    // }
+
+    // attachevent()  used in earily time
+    // jQuery -.oneventlisten()
+    // document.getElementById('hello').addEventListener('click',function(){},false)
+    //type , timestamp ,defaultPrevented to stop the default behavior of form,<a>,
+    // target, toElement ,srcElement ,currentTarget,
+    // clientX ,clientY ,screenX ,screenY
+    // altkey,ctrlkey,shiftkey,keyCode 
+    // look after these event specify 
+    // document.getElementById('hello').addEventListener('click',function(e){
+    //     console.log(e);
+    // },false)
+
+
+    // usecase of eventpropogation focus on third paremeter in addEventListener false -top to down 
+    // document.getElementById('image').addEventListener('click',function(e){
+    //     console.log("click inside the ul");
+    // },false)
+    // document.getElementById('im2').addEventListener('click',function(e){
+    //     console.log("click to im2");
+    // },false)
+
+    // usecase of eventcapturing which is bottom to up approch 
+    // document.getElementById('image').addEventListener('click',function(e){
+    //     console.log("click inside the ul");
+    // },true)
+    // document.getElementById('im2').addEventListener('click',function(e){
+    //     console.log("click to im2");
+    // },true)
+    // document.getElementById('im2').addEventListener('click',function(e){
+    //     console.log("click to im2");
+    //     e.stopPropagation();
+    // },true)
+
+    // eventpropogation,eventbubbling == false , bottom to top
+    // eventcapturing==true top to bottom
+
+    document.getElementById('google').addEventListener
+    ('click',function(e){
+        e.preventDefault();
+        console.log("click the events")
+    },false)
+
+
+
+</script>
+
+</html>
